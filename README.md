@@ -12,3 +12,27 @@ Ajax를 이용해 API를 호출하며, 요청 결과를 console 로그로 확인
 ## Requirements
 - bootstrap (3.3.7)
 - jquery (3.2.1)
+
+## 프로젝트 구조
+
+```shell
+soobook
+├── app
+│   ├── index.html
+│   └── js
+│       ├── cookie.js
+│       ├── login.js
+│       ├── logout.js
+│       └── signup.js
+├── bower.json
+└── bower_components
+    ├── bootstrap
+    └── jquery
+
+```
+
+프로젝트를 동작하기 위해서 서버에서 실행합니다. 로컬서버를 사용할 경우 아래의 주소로 사용합니다.
+- localhost:3000
+- localhost:4040
+- localhost:5050
+
