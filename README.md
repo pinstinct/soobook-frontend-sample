@@ -20,10 +20,6 @@ soobook
 ├── app
 │   ├── index.html
 │   └── js
-│       ├── cookie.js
-│       ├── login.js
-│       ├── logout.js
-│       └── signup.js
 ├── bower.json
 └── bower_components
     ├── bootstrap
@@ -31,7 +27,7 @@ soobook
 
 ```
 
-프로젝트를 동작하기 위해서 서버에서 실행합니다. 로컬서버를 사용할 경우 아래의 주소로 사용합니다.
+프로젝트를 동작하기 위해서 서버에서 실행합니다. 로컬서버를 사용할 경우 아래의 주소를 사용합니다.
 - localhost:3000
 - localhost:4040
 - localhost:5050
