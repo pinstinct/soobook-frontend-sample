@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Soobook</title>
+  <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body>
+  <div id="wrap">
+
+    <div class="page-header">
+      <h1>Soobook API Sample Call</h1>
+    </div>
+
+    <ul class="nav nav-tabs" id="index-tab">
+      <li role="presentation" class="active"><a href="#signup">Signup</a></li>
+      <li role="presentation"><a href="#login">Login</a></li>
+      <li role="presentation"><a href="#logout">Logout</a></li>
+    </ul>
+
+    <div id="signup">
+      <button type="button" class="btn btn-default">회원가입 API</button>
+
+    </div>
+
+  </div>
+  <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="../bower_components/bootstrap/dist/js/bootstrap.js"></script>
+
+  <!-- API script  -->
+  <script src="js/signup.js"></script>
+
+  <!-- Togglable tabs  -->
+  <script>
+  $('#index-tab a').click(function (e) {
+    e.preventDefault()
+    $(this).tab('show')
+  })
+  </script>
+
+</body>
+</html>

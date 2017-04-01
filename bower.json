@@ -1,0 +1,21 @@
+{
+  "name": "soobook",
+  "authors": [
+    "LimHM <gusals3407@gmail.com>"
+  ],
+  "description": "soobook frontend sample",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.2.1"
+  }
+}
