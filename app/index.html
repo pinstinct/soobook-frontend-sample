@@ -16,8 +16,8 @@
 
     <div class="list-group">
       <a href="#" id="signup-api" class="list-group-item list-group-item-success">Signup API</a>
-      <a href="#" class="list-group-item list-group-item-info">Log in API</a>
-      <a href="#" class="list-group-item list-group-item-warning">Logout API</a>
+      <a href="#" id="login-api" class="list-group-item list-group-item-info">Log in API</a>
+      <a href="#" id="logout-api" class="list-group-item list-group-item-warning">Logout API</a>
     </div>
 
   </div>
@@ -25,6 +25,7 @@
   <script src="../bower_components/bootstrap/dist/js/bootstrap.js"></script>
 
   <!-- API script  -->
+  <script src="js/cookie.js"></script>
   <script src="js/signup.js"></script>
   <script src="js/login.js"></script>
   <script src="js/logout.js"></script>
@@ -32,6 +33,12 @@
   <script>
   $('#signup-api').click(function(){
     signup('test1111@11111.com', '12345asdf', 'Nick');
+  })
+  $('#login-api').click(function(){
+    login('test1111@11111.com', '12345asdf');
+  })
+  $('#logout-api').click(function(){
+    logout();
   })
   </script>
 
