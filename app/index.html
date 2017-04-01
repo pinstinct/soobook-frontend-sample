@@ -14,15 +14,10 @@
       <h1>Soobook API Sample Call</h1>
     </div>
 
-    <ul class="nav nav-tabs" id="index-tab">
-      <li role="presentation" class="active"><a href="#signup">Signup</a></li>
-      <li role="presentation"><a href="#login">Login</a></li>
-      <li role="presentation"><a href="#logout">Logout</a></li>
-    </ul>
-
-    <div id="signup">
-      <button type="button" class="btn btn-default">회원가입 API</button>
-
+    <div class="list-group">
+      <a href="#" id="signup-api" class="list-group-item list-group-item-success">Signup API</a>
+      <a href="#" class="list-group-item list-group-item-info">Log in API</a>
+      <a href="#" class="list-group-item list-group-item-warning">Logout API</a>
     </div>
 
   </div>
@@ -31,12 +26,12 @@
 
   <!-- API script  -->
   <script src="js/signup.js"></script>
+  <script src="js/login.js"></script>
+  <script src="js/logout.js"></script>
 
-  <!-- Togglable tabs  -->
   <script>
-  $('#index-tab a').click(function (e) {
-    e.preventDefault()
-    $(this).tab('show')
+  $('#signup-api').click(function(){
+    signup('test1111@11111.com', '12345asdf', 'Nick');
   })
   </script>
 
