@@ -13,6 +13,6 @@ function signup(username, password, nickname) {
     console.log(response);
   })
   .fail(function(response) {
-    console.log(response);
+    console.log(response)
   });
 }
