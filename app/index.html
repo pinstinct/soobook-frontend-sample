@@ -19,6 +19,7 @@
       <a href="#" class="list-group-item list-group-item-success signup-api-result">Signup API Result</a>
       <a href="#" id="login-api" class="list-group-item list-group-item-info">Log in API</a>
       <a href="#" id="logout-api" class="list-group-item list-group-item-warning">Logout API</a>
+      <a href="#" id="mybook-add-api" class="list-group-item list-group-item-success">MyBook Add API</a>
     </div>
 
   </div>
@@ -30,20 +31,30 @@
   <script src="js/signup.js"></script>
   <script src="js/login.js"></script>
   <script src="js/logout.js"></script>
+  <script src="js/mybookadd.js"></script>
 
   <script>
   $('#signup-api').click(function(){
     signup('front@test.com', '12345asdf', 'front-lim');
   })
   $('#login-api').click(function(){
-    login('test1111@aaa1.com', '12345asdf');
+    login('front@test.com', '12345asdf');
   })
   $('#logout-api').click(function(){
     logout();
   })
 
+  // 여러개의 책 저장
+  $('#mybook-add-api').click(function(){
+    var books = [44, 45, 46, 47]
+    for (var i = 0; i < books.length; i++){
+      book = books[i]
+      mybookaddjs(book);
+    }
+  })
+
   // API 요청결과를 가져와서 출력하는 기능
-  function signup(username, password, nickname) {
+  function login(username, password, nickname) {
     $.ajax({
       url: 'https://soobook.devlim.net/api/user/signup/',
       type: 'POST',
