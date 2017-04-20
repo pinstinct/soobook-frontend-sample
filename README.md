@@ -7,6 +7,7 @@ Ajax를 이용해 API를 호출하며, 요청 결과를 console 로그로 확인
 	- API 요청결과 닉네임을 출력 
 - login API
 - logout API
+- mybook add API
 
 자세한 사항은 [API 가이드](https://pinstinct.gitbooks.io/soobook-api/content/)에서 확인할 수 있습니다.
 
