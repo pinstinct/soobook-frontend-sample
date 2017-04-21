@@ -1,12 +1,12 @@
 {
-  "name": "soobook",
+  "name": "HM",
   "authors": [
     "LimHM <gusals3407@gmail.com>"
   ],
   "description": "soobook frontend sample",
   "main": "",
   "license": "MIT",
-  "homepage": "",
+  "homepage": "https://github.com/pinstinct/soobook-frontend-sample",
   "ignore": [
     "**/.*",
     "node_modules",

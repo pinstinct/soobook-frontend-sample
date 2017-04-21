@@ -20,11 +20,13 @@
       <a href="#" id="login-api" class="list-group-item list-group-item-info">Log in API</a>
       <a href="#" id="logout-api" class="list-group-item list-group-item-warning">Logout API</a>
       <a href="#" id="mybook-add-api" class="list-group-item list-group-item-success">MyBook Add API</a>
+      <a href="#" id="mybook-list-api" class="list-group-item list-group-item-success">MyBook List API</a>
     </div>
 
   </div>
   <script src="../bower_components/jquery/dist/jquery.min.js"></script>
   <script src="../bower_components/bootstrap/dist/js/bootstrap.js"></script>
+  <script src="../bower_components/moment/moment.js"></script>
 
   <!-- API script  -->
   <script src="js/cookie.js"></script>
@@ -32,6 +34,7 @@
   <script src="js/login.js"></script>
   <script src="js/logout.js"></script>
   <script src="js/mybookadd.js"></script>
+  <script src="js/mybooklist.js"></script>
 
   <script>
   $('#signup-api').click(function(){
@@ -46,11 +49,14 @@
 
   // 여러개의 책 저장
   $('#mybook-add-api').click(function(){
-    var books = [44, 45, 46, 47]
+    var books = [44, 45, 46, 47, 48, 49]
     for (var i = 0; i < books.length; i++){
       book = books[i]
-      mybookaddjs(book);
+      mybookadd(book);
     }
+  })
+  $('#mybook-list-api').click(function(){
+    mybooklist()
   })
 
   // API 요청결과를 가져와서 출력하는 기능

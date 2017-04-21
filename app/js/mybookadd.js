@@ -1,4 +1,4 @@
-function mybookaddjs(book) {
+function mybookadd(book) {
   var token = 'Token ' + getCookie('SoobookToken');
   $.ajax({
     url: 'https://soobook.devlim.net/api/book/mybook/',
